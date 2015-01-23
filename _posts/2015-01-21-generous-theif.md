@@ -6,9 +6,8 @@ author: jroelofs
 tags: [fallacies taxation]
 comments: true
 image:
-  feature: sample-image-4.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+  feature: generous-thief.png
+  credit: Jon Roelofs
 ---
 
 The mistaken belief that resources taken on belahf of a victim are not actually stolen.

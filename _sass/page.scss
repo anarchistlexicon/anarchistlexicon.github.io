@@ -40,6 +40,9 @@ body {
 		@include grid(12,1.5);
 		@include prefix(12,2);
 	}
+	a {
+		color: $navtextcolor;
+	}
 }
 
 /* Top navigation links */
@@ -80,7 +83,7 @@ body {
 			border-bottom: 0 solid transparent;
 		}
 		a { 
-			color: #ff0000;
+			color: $navtextcolor;
 			display: block;
 			padding: 10px 0;
 			decoration: none;

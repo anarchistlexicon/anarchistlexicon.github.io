@@ -13,22 +13,4 @@ madphilosopher:
   name: Joey
   bio: "Death metal is best viewed \"as art,\"... far more violent art can be found at the Vatican...\" ~George Fisher"
   avatar: bio-photo-2.jpg
-
-billy_rick:
-  name: Billy Rick
-  web: http://thewhip.com
-  email: billy@rick.com
-  bio: "What do you want, jewels? I am a very extravagant man."
-  avatar: bio-photo-2.jpg
-  twitter: extravagantman
-  google:
-    plus: BillyRick
-
-cornelius_fiddlebone:
-  name: Cornelius Fiddlebone
-  email: cornelius@thewhip.com
-  bio: "I ordered what?"
-  avatar: bio-photo.jpg
-  twitter: rhymeswithsackit
-  google:
-    plus: CorneliusFiddlebone
+  bitcoin: 171eB18Yg39JpkLrrL8Wji5kj1ATGoyPay

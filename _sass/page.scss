@@ -19,6 +19,7 @@ body {
 	font-weight: 700;
 	text-transform: uppercase;
 	@include clearfix;
+	background: $navbarbgcolor;
 }
 
 /* Site name */
@@ -232,6 +233,8 @@ $button-size: 1.5rem;
 	}
 	.post,
 	.page {
+		background: $pagebgcolor;
+		padding: 2em;
 		@include container;
 		@include grid(12,10);
 		@include prefix(12,1);

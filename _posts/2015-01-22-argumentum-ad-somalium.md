@@ -6,9 +6,8 @@ author: jroelofs
 tags: [fallacies somalia]
 comments: true
 image:
-  feature: sample-image-4.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+  feature: somalia-flag.png
+  credit: Jon Roelofs
 ---
 
 A variation of the flase dichotomy fallacy by which one assumes that the only intellectual alternative to one's local government is Somalia.

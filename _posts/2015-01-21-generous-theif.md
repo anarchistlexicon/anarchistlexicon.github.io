@@ -15,4 +15,4 @@ The mistaken belief that resources taken on belahf of a victim are not actually 
 
 > {{ You should pay your fair share of taxes... They go to fund good public programs like schools and roads. }}
 
-See also: [Muh Roads](/2015/01/20/muh-roads)
+See also: [Muh Roads](/muh-roads)

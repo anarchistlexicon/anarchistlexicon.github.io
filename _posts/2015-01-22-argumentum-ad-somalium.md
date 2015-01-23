@@ -14,6 +14,3 @@ A variation of the flase dichotomy fallacy by which one assumes that the only in
 
 > {{ page.excerpt }}
 
-### Backstory
-
-Somaila is known for its lack of government 

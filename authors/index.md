@@ -6,6 +6,7 @@ comments: false
 image:
   feature: grass.jpg
   credit: Jon Roelofs
+  creditlink: /authors
 ---
 
 ## Jon

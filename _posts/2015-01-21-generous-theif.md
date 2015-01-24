@@ -8,6 +8,7 @@ comments: true
 image:
   feature: generous-thief.png
   credit: Jon Roelofs
+  creditlink: /authors
 ---
 
 The mistaken belief that resources taken on belahf of a victim are not actually stolen.

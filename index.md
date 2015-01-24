@@ -5,4 +5,5 @@ tags: [Jekyll, theme, responsive, blog, template]
 image:
   feature: about.png
   credit: Jon Roelofs
+  creditlink: /authors
 ---

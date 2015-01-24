@@ -4,7 +4,7 @@ title: About the Authors
 tags: [about]
 comments: false
 image:
-  feature: about.png
+  feature: grass.jpg
   credit: Jon Roelofs
 ---
 

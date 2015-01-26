@@ -1,0 +1,28 @@
+{% if page %}
+  {% if page.authors %}
+    {% for name in page.authors %}
+      {% assign author = site.data.authors[name] %}
+      {% include _author-bio.html %}
+      <br/><br/>
+    {% endfor %}
+  {% else %}
+    {% if page.author %}
+      {% assign author = site.data.authors[page.author] %}
+    {% else %}
+      {% assign author = site.owner %}
+    {% endif %}
+    {% include _author-bio.html %}
+  {% endif %}
+{% else %}
+  {% if site.owners %}
+    {% for name in site.owners %}
+      {% assign author = site.data.authors[name] %}
+      {% include _author-bio.html %}
+      <br/><br/>
+    {% endfor %}
+  {% else %}
+    {% assign author = site.owner %}
+    {% include _author-bio.html %}
+  {% endif %}
+{% endif %}
+

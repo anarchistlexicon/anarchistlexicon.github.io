@@ -7,6 +7,7 @@ image:
   feature: grass.jpg
   credit: Jon Roelofs
   creditlink: /authors
+authors: [jroelofs, madphilosopher]
 ---
 
 ## Jon

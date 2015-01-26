@@ -3,7 +3,7 @@ layout: post
 title: "Muh Courthouses"
 excerpt: "But without government, who would build the courthouses?!?"
 author: jroelofs
-tags: [fallacies retorts courts]
+tags: [fallacies retorts courts, muh]
 comments: true
 image:
   feature: generous-thief.png

@@ -3,7 +3,7 @@ layout: post
 title: "Muh Roads"
 excerpt: "But without government, who will build the roads?!?"
 author: jroelofs
-tags: [fallacies roads]
+tags: [fallacies, roads, muh]
 comments: true
 image:
   feature: muh-roads.png

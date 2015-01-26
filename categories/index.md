@@ -1,6 +1,6 @@
 ---
 layout: categories-index
-title: All Posts
+title: Categories
 authors: [jroelofs, madphilosopher]
 excerpt: "A List of Posts"
 ---

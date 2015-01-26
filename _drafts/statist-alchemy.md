@@ -12,8 +12,8 @@ image:
 
 A belief that a carefully measured add-mixture of multiple criminal activities can result in a just society.  For example: violence, coercion, and theft can produce peace, security, and freedom.
 
-* Violence
-* Coercion
-* Theft
-* ???
-* Profit
+1. Violence
+1. Coercion
+1. Theft
+1. ???
+1. Profit

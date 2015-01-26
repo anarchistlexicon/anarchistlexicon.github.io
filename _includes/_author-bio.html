@@ -27,4 +27,5 @@
   {% if author.weibo %}<a href="http://www.weibo.com/{{ author.weibo }}" class="author-social" target="_blank"><i class="fa fa-fw fa-weibo"></i> Weibo</a>{% endif %}
   {% if author.flickr %}<a href="http://www.flickr.com/{{ author.flickr }}" class="author-social" target="_blank"><i class="fa fa-fw fa-flickr"></i> Flickr</a>{% endif %}
   {% if author.bitcoin %}<a href="bitcoin:{{ author.bitcoin }}?label={{ page.title | remove: ' ' }}" class="author-social" target="_blank"><i class="fa fa-fw fa-envelope-square"></i>Bitcoin: <div class="btcaddr">{{ author.bitcoin }}</div></a>{% endif %}
+  {% if author.website %}<a href="{{ author.website }}" class="author-social" target="_blank"><i class="fa fa-fw fa-envelope-square"></i>Website</a>{% endif %}
 </div>

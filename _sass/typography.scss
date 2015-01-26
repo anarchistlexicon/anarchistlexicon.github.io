@@ -166,3 +166,12 @@ pre {
 	line-height: 1.5;
 	overflow-x: auto;
 }
+
+/*
+   Bitcoin Address
+   ========================================================================== */
+
+.btcaddr {
+  word-wrap: break-word;
+  font-family: monospace;
+}

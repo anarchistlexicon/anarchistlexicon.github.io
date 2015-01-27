@@ -35,7 +35,14 @@
   <div id="index">
     <h1>{{ page.title }}</h1>
 
+    <ul>
     {% for tag in site.data.tags %}
+      <li><a href="#{{ tag.slug }}">{{ tag.name }}</a></li>
+    {% endfor %}
+    </ul>
+
+    {% for tag in site.data.tags %}
+      <a name="{{ tag.slug }}"/>
       <h3>{{ tag.name }}</h3>
       {% for post in site.posts %}
         {% if post.tags %}

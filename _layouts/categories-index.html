@@ -44,11 +44,10 @@
           jekyll markdown is a kinda gimpy language
           Detect whether the post's tag matches the set we're currently considering
           -->
+          {% assign has_correct_tag = "no" %}
           {% for post_tag in post.tags %}
             {% if tag.slug == post_tag %}
               {% assign has_correct_tag = "yes" %}
-            {% else %}
-              {% assign has_correct_tag = "no" %}
             {% endif %}
           {% endfor %}
 

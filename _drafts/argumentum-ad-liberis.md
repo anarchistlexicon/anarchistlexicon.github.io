@@ -3,7 +3,7 @@ layout: post
 title: "Argumentum ad Liberis"
 excerpt: "But what about the children?!?"
 author: madphilosopher
-tags: [fallacies children]
+tags: [argumentum]
 comments: true
 image:
   feature: generous-thief.png

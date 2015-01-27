@@ -3,7 +3,7 @@ layout: post
 title: "Argumentum ad Terrorism"
 excerpt: "It's only terrorism if government isn't the one doing it."
 author: madphilosopher
-tags: [fallacies statism]
+tags: [argumentum]
 comments: true
 image:
   feature: generous-thief.png

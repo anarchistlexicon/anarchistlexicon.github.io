@@ -3,7 +3,7 @@ layout: post
 title: "Argumentum ad Somalium"
 excerpt: "If you hate government so much, why don't you move to Somalia?"
 author: jroelofs
-tags: [fallacies somalia]
+tags: [argumentum]
 comments: true
 image:
   feature: somalia-flag.png

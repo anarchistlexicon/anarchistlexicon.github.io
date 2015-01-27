@@ -3,7 +3,7 @@ layout: post
 title: "Argumentum ad Unicorno"
 excerpt: "The Social Contract dictates that cops can beat black people to death if they want to."
 author: madphilosopher
-tags: [fallacies ]
+tags: [argumentum]
 comments: true
 image:
   feature: generous-thief.png

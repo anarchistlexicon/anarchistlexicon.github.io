@@ -3,7 +3,7 @@ layout: post
 title: "Argumentum ad Godwin"
 excerpt: "Your argument is wrong because you mentioned Hitler."
 author: madphilosopher
-tags: [fallacies statism]
+tags: [argumentum]
 comments: true
 image:
   feature: generous-thief.png

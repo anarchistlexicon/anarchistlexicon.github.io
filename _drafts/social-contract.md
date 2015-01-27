@@ -3,7 +3,7 @@ layout: post
 title: "Social Contract"
 excerpt: "You implicitly signed the social contract when you were born."
 author: madphilosopher
-tags: [fallacies statism]
+tags: [statism]
 comments: true
 image:
   feature: generous-thief.png

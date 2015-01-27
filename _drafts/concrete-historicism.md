@@ -2,7 +2,7 @@
 layout: post
 title: "Concrete Historicism"
 author: madphilosopher
-tags: [fallacies statism]
+tags: [fallacies, statism]
 comments: true
 image:
   feature: generous-thief.png

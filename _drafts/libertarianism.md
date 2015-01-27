@@ -2,7 +2,7 @@
 layout: post
 title: "Libertarianism"
 author: madphilosopher
-tags: [fallacies statism]
+tags: [statism]
 comments: true
 image:
   feature: generous-thief.png

@@ -3,7 +3,7 @@ layout: post
 title: "TANSTAAFL"
 excerpt: "There aint no such thing as a free lunch"
 author: jroelofs
-tags: [tanstaafl]
+tags: [economics]
 comments: true
 image:
   feature: generous-thief.png

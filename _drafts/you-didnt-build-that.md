@@ -2,7 +2,7 @@
 layout: post
 title: "\"You didn't build that\""
 author: madphilosopher
-tags: [fallacies statism]
+tags: [economics]
 comments: true
 image:
   feature: generous-thief.png

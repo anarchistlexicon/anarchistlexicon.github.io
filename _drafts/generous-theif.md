@@ -3,7 +3,7 @@ layout: post
 title: "The Generous Thief"
 excerpt: "Taxation is Theft"
 author: jroelofs
-tags: [fallacies taxation]
+tags: [taxation, economics]
 comments: true
 image:
   feature: generous-thief.png

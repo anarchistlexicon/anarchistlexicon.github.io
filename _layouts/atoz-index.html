@@ -66,25 +66,32 @@ document.addEventListener("DOMContentLoaded", function(event)
         return 0;
     }
 
-    function stripHtml(str) {
-        var temp = document.createElement('DIV');
-        temp.innerHTML = str;
-        return temp.textContent || temp.innerText;
-    }
-
     var last_first_seen = "_";
     var printer = function(idx, post) {
+        function stripHtml(str) {
+            var temp = document.createElement('DIV');
+            temp.innerHTML = str;
+            return temp.textContent || temp.innerText;
+        }
+
         function firstToUpperCase(str) {
             return str.substr(0, 1).toUpperCase();
         }
 
+        // Section Headers
         if (last_first_seen != firstToUpperCase(post.title)) {
             last_first_seen = firstToUpperCase(post.title);
             output.append("<br><h1>" + last_first_seen + "</h1><hr>");
         }
+
+        var stripped_excerpt = stripHtml(post.excerpt);
+        if (stripped_excerpt.length + 3 >= 160)
+            stripped_excerpt = stripped_excerpt.substring(0, 160-3) + "...";
+
+        // Articles
         output.append("<article>\n" +
                       "  <h2><a href=\"{{ site.url }}" + post.url + "\" title=\"" + post.title + "\">" + post.title + "</a></h2>\n" +
-                      "  <p>" + stripHtml(post.excerpt) + "</p>\n" +
+                      "  <p>" + stripped_excerpt + "</p>\n" +
                       "</article>");
     }
 

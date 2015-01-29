@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "\"You couldn't have built that\""
+title: "You couldn't have built that"
 author: madphilosopher
 tags: [economics]
 comments: true

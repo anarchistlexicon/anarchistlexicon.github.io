@@ -35,19 +35,63 @@
   <div id="index">
     <h1>{{ page.title }}</h1>
 
-    {% assign sorted_posts = site.posts | sort: 'title' %}
-    {% for post in sorted_posts %}
+    <div id="posts_alphabetized"></div>
+<script type="text/javascript">
+function enumeratePosts(order, printer)
+{
+    function getPosts() {
+        return $.getJSON("{{site.url}}/posts_metadata.json");
+    }
 
-      <article>
-        {% if post.link %}
-          <h2 class="link-post"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></a></h2>
-        {% else %}
-          <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-          <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
-        {% endif %}
-      </article>
+    getPosts().done(function(j) {
+        var posts = [];
+        $.each(j, function() {
+            posts.push(this);
+        });
 
-    {% endfor %}
+        posts.sort(order);
+
+        $.each(posts, printer);
+    });
+}
+
+document.addEventListener("DOMContentLoaded", function(event)
+{
+    var output = $("#posts_alphabetized");
+    output.html("<br/>");
+
+    var order = function(a, b) {
+        if (a.title < b.title) return -1;
+        if (a.title > b.title) return 1;
+        return 0;
+    }
+
+    function stripHtml(str) {
+        var temp = document.createElement('DIV');
+        temp.innerHTML = str;
+        return temp.textContent || temp.innerText;
+    }
+
+    var last_first_seen = "_";
+    var printer = function(idx, post) {
+        function firstToUpperCase(str) {
+            return str.substr(0, 1).toUpperCase();
+        }
+
+        if (last_first_seen != firstToUpperCase(post.title)) {
+            last_first_seen = firstToUpperCase(post.title);
+            output.append("<br><h1>" + last_first_seen + "</h1><hr>");
+        }
+        output.append("<article>\n" +
+                      "  <h2><a href=\"{{ site.url }}" + post.url + "\" title=\"" + post.title + "\">" + post.title + "</a></h2>\n" +
+                      "  <p>" + stripHtml(post.excerpt) + "</p>\n" +
+                      "</article>");
+    }
+
+    enumeratePosts(order, printer);
+});
+</script>
+
   </div><!-- /#index -->
 </div><!-- /#main -->
 

@@ -84,7 +84,7 @@
               // Print links
               output.append("<ul>");
               tags.map(function(tag) {
-                  output.append("<li><a href=\"#" + tag + "\">" + tag + "</a></li>");
+                  output.append("<li><a href=\"#tag_" + tag + "\">" + tag + "</a></li>");
               });
               output.append("</ul>");
 
@@ -110,7 +110,7 @@
 
               // Print table itself
               tags.map(function(tag) {
-                  output.append("<br><h1>" + tag + "</h1><a name=" + tag + "/><hr>");
+                  output.append("<br><h1>" + tag + "</h1><a name=tag_" + tag + "/><hr>");
                   posts.map(function(post) {
                       if ($.inArray(tag, post.tags) > -1) {
                           print_post(post);

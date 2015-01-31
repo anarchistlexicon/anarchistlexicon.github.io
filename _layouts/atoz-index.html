@@ -36,68 +36,68 @@
     <h1>{{ page.title }}</h1>
 
     <div id="posts_alphabetized"></div>
-<script type="text/javascript">
-function enumeratePosts(order, printer)
-{
-    function getPosts() {
-        return $.getJSON("{{site.url}}/posts_metadata.json");
-    }
+    <script type="text/javascript">
+      function enumeratePosts(order, printer)
+      {
+          function getPosts() {
+              return $.getJSON("{{site.url}}/posts_metadata.json");
+          }
 
-    getPosts().done(function(j) {
-        var posts = [];
-        $.each(j, function() {
-            posts.push(this);
-        });
+          getPosts().done(function(j) {
+              var posts = [];
+              $.each(j, function() {
+                  posts.push(this);
+              });
 
-        posts.sort(order);
+              posts.sort(order);
 
-        $.each(posts, printer);
-    });
-}
+              $.each(posts, printer);
+          });
+      }
 
-document.addEventListener("DOMContentLoaded", function(event)
-{
-    var output = $("#posts_alphabetized");
-    output.html("<br/>");
+      document.addEventListener("DOMContentLoaded", function(event)
+      {
+          var output = $("#posts_alphabetized");
+          output.html("<br/>");
 
-    var order = function(a, b) {
-        if (a.title < b.title) return -1;
-        if (a.title > b.title) return 1;
-        return 0;
-    }
+          var order = function(a, b) {
+              if (a.title < b.title) return -1;
+              if (a.title > b.title) return 1;
+              return 0;
+          }
 
-    var last_first_seen = "_";
-    var printer = function(idx, post) {
-        function stripHtml(str) {
-            var temp = document.createElement('DIV');
-            temp.innerHTML = str;
-            return temp.textContent || temp.innerText;
-        }
+          var last_first_seen = "_";
+          var printer = function(idx, post) {
+              function stripHtml(str) {
+                  var temp = document.createElement('DIV');
+                  temp.innerHTML = str;
+                  return temp.textContent || temp.innerText;
+              }
 
-        function firstToUpperCase(str) {
-            return str.substr(0, 1).toUpperCase();
-        }
+              function firstToUpperCase(str) {
+                  return str.substr(0, 1).toUpperCase();
+              }
 
-        // Section Headers
-        if (last_first_seen != firstToUpperCase(post.title)) {
-            last_first_seen = firstToUpperCase(post.title);
-            output.append("<br><h1>" + last_first_seen + "</h1><hr>");
-        }
+              // Section Headers
+              if (last_first_seen != firstToUpperCase(post.title)) {
+                  last_first_seen = firstToUpperCase(post.title);
+                  output.append("<br><h1>" + last_first_seen + "</h1><hr>");
+              }
 
-        var stripped_excerpt = stripHtml(post.excerpt);
-        if (stripped_excerpt.length + 3 >= 160)
-            stripped_excerpt = stripped_excerpt.substring(0, 160-3) + "...";
+              var stripped_excerpt = stripHtml(post.excerpt);
+              if (stripped_excerpt.length + 3 >= 160)
+                  stripped_excerpt = stripped_excerpt.substring(0, 160-3) + "...";
 
-        // Articles
-        output.append("<article>\n" +
-                      "  <h2><a href=\"{{ site.url }}" + post.url + "\" title=\"" + post.title + "\">" + post.title + "</a></h2>\n" +
-                      "  <p>" + stripped_excerpt + "</p>\n" +
-                      "</article>");
-    }
+              // Articles
+              output.append("<article>\n" +
+                            "  <h2><a href=\"{{ site.url }}" + post.url + "\" title=\"" + post.title + "\">" + post.title + "</a></h2>\n" +
+                            "  <p>" + stripped_excerpt + "</p>\n" +
+                            "</article>");
+          }
 
-    enumeratePosts(order, printer);
-});
-</script>
+          enumeratePosts(order, printer);
+      });
+    </script>
 
   </div><!-- /#index -->
 </div><!-- /#main -->
@@ -109,6 +109,6 @@ document.addEventListener("DOMContentLoaded", function(event)
 </div><!-- /.footer-wrap -->
 
 {% include _scripts.html %}
-  
+
 </body>
 </html>

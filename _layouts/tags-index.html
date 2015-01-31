@@ -35,44 +35,111 @@
   <div id="index">
     <h1>{{ page.title }}</h1>
 
-    <ul>
-    {% for tag in site.data.tags %}
-      <li><a href="#{{ tag.slug }}">{{ tag.name }}</a></li>
-    {% endfor %}
-    </ul>
+    <div id="posts_tagged"></div>
+    <script type="text/javascript">
+      function enumeratePosts(order, printer, continuation)
+      {
+          function getPosts() {
+              return $.getJSON("{{site.url}}/posts_metadata.json");
+          }
 
-    {% for tag in site.data.tags %}
-      <a name="{{ tag.slug }}"/>
-      <h3>{{ tag.name }}</h3>
-      {% for post in site.posts %}
-        {% if post.tags %}
+          getPosts().done(function(j) {
+              var posts = [];
+              $.each(j, function() {
+                  posts.push(this);
+              });
 
-          <!--
-          jekyll markdown is a kinda gimpy language
-          Detect whether the post's tag matches the set we're currently considering
-          -->
-          {% assign has_correct_tag = "no" %}
-          {% for post_tag in post.tags %}
-            {% if tag.slug == post_tag %}
-              {% assign has_correct_tag = "yes" %}
-            {% endif %}
-          {% endfor %}
+              posts.sort(order);
 
-          {% if has_correct_tag == "yes" %}
-            <article>
-              {% if post.link %}
-                <h2 class="link-post"><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a> <a href="{{ post.link }}" target="_blank" title="{{ post.title }}"><i class="fa fa-link"></i></a></h2>
-              {% else %}
-                <h2><a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
-                <p>{{ post.excerpt | strip_html | truncate: 160 }}</p>
-              {% endif %}
-            </article>
-          {% endif %}
+              $.each(posts, printer);
 
-        {% endif %}
-      {% endfor %}
-      <br/>
-    {% endfor %}
+              continuation(posts);
+          });
+      }
+
+      document.addEventListener("DOMContentLoaded", function(event)
+      {
+          var output = $("#posts_tagged");
+          output.html("<br/>");
+
+          var order = function(a, b) {
+              if (a.title < b.title) return -1;
+              if (a.title > b.title) return 1;
+              return 0;
+          }
+
+
+          function unique(array) {
+              var a = array.concat();
+              for(var i=0; i<a.length; ++i) {
+                  for(var j=i+1; j<a.length; ++j) {
+                      if(a[i] === a[j])
+                          a.splice(j--, 1);
+                  }
+              }
+              return a;
+          };
+
+          var tags = []
+          var posts = []
+          var collect_tags = function(idx, post) {
+              $.merge(tags, post.tags);
+              tags = unique(tags.concat(post.tags));
+              posts += post;
+          }
+
+          enumeratePosts(order, collect_tags, function(posts) {
+
+    //    <ul>
+    //      <li><a href="#{ tag.slug }">{ tag.name }</a></li>
+    //    </ul>
+    //    <a name="{ tag.slug }"/>
+
+              var print_tag_link = function(tag) {
+                  output.append("<li><a href=\"#" + tag + "\">" + tag + "</a></li>");
+              }
+
+              output.append("<ul>");
+              tags.map(function(tag) {
+                  print_tag_link(tag);
+              });
+              output.append("</ul>");
+
+
+              var print_tag_hr = function(tag) {
+                  output.append("<br><h1>" + tag + "</h1><a name=" + tag + "/><hr>");
+              }
+
+              var print_post = function(post) {
+                  function stripHtml(str) {
+                      var temp = document.createElement('DIV');
+                      temp.innerHTML = str;
+                      return temp.textContent || temp.innerText;
+                  }
+
+                  var stripped_excerpt = stripHtml(post.excerpt);
+                  if (stripped_excerpt.length + 3 >= 160)
+                      stripped_excerpt = stripped_excerpt.substring(0, 160-3) + "...";
+
+                  // Articles
+                  output.append("<article>\n" +
+                                "  <h2><a href=\"{{ site.url }}" + post.url + "\" title=\"" + post.title + "\">" + post.title + "</a></h2>\n" +
+                                "  <p>" + stripped_excerpt + "</p>\n" +
+                                "</article>");
+              }
+
+              tags.map(function(tag) {
+                  print_tag_hr(tag);
+                  posts.map(function(post) {
+                      if ($.inArray(tag, post.tags) > -1) {
+                          print_post(post);
+                      }
+                  });
+              });
+          });
+      });
+    </script>
+
   </div><!-- /#index -->
 </div><!-- /#main -->
 
@@ -83,6 +150,6 @@
 </div><!-- /.footer-wrap -->
 
 {% include _scripts.html %}
-  
+
 </body>
 </html>

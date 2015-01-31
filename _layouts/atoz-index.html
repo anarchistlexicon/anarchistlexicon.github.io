@@ -35,9 +35,9 @@
   <div id="index">
     <h1>{{ page.title }}</h1>
 
-    <div id="posts_alphabetized"></div>
+    <div id="posts_firsted"></div>
     <script type="text/javascript">
-      function enumeratePosts(order, printer)
+      function enumeratePosts(order, continuation)
       {
           function getPosts() {
               return $.getJSON("{{site.url}}/posts_metadata.json");
@@ -48,17 +48,14 @@
               $.each(j, function() {
                   posts.push(this);
               });
-
               posts.sort(order);
-
-              $.each(posts, printer);
+              continuation(posts);
           });
       }
 
       document.addEventListener("DOMContentLoaded", function(event)
       {
-          var output = $("#posts_alphabetized");
-          output.html("<br/>");
+          var output = $("#posts_firsted");
 
           var order = function(a, b) {
               if (a.title < b.title) return -1;
@@ -66,37 +63,66 @@
               return 0;
           }
 
-          var last_first_seen = "_";
-          var printer = function(idx, post) {
-              function stripHtml(str) {
-                  var temp = document.createElement('DIV');
-                  temp.innerHTML = str;
-                  return temp.textContent || temp.innerText;
-              }
-
+          enumeratePosts(order, function(posts) {
               function firstToUpperCase(str) {
                   return str.substr(0, 1).toUpperCase();
               }
 
-              // Section Headers
-              if (last_first_seen != firstToUpperCase(post.title)) {
-                  last_first_seen = firstToUpperCase(post.title);
-                  output.append("<br><h1>" + last_first_seen + "</h1><hr>");
+              function unique(array) {
+                  var a = array.concat();
+                  for(var i=0; i<a.length; ++i) {
+                      for(var j=i+1; j<a.length; ++j) {
+                          if(a[i] === a[j])
+                              a.splice(j--, 1);
+                      }
+                  }
+                  return a;
+              };
+
+              // Collect first letters
+              var firsts = [];
+              posts.map(function(post) {
+                  firsts = unique(firsts.concat(firstToUpperCase(post.title)));
+              });
+
+              // Print links
+              output.append("<ul>");
+              firsts.map(function(first) {
+                  output.append("<li><a href=\"#first_" + first + "\">" + first + "</a></li>");
+              });
+              output.append("</ul>");
+
+              var print_post = function(post) {
+                  function stripHtml(str) {
+                      var temp = document.createElement('DIV');
+                      temp.innerHTML = str;
+                      return temp.textContent || temp.innerText;
+                  }
+
+                  var stripped_excerpt = stripHtml(post.excerpt);
+                  if (stripped_excerpt.length + 3 >= 160)
+                      stripped_excerpt = stripped_excerpt.substring(0, 160-3) + "...";
+
+                  // Articles
+                  output.append("<article>\n" +
+                                "  <h2><a href=\"{{ site.url }}" + post.url +
+                                "\" title=\"" + post.title + "\">" + post.title +
+                                "</a></h2>\n" +
+                                "  <p>" + stripped_excerpt + "</p>\n" +
+                                "</article>");
               }
 
-              var stripped_excerpt = stripHtml(post.excerpt);
-              if (stripped_excerpt.length + 3 >= 160)
-                  stripped_excerpt = stripped_excerpt.substring(0, 160-3) + "...";
-
-              // Articles
-              output.append("<article>\n" +
-                            "  <h2><a href=\"{{ site.url }}" + post.url + "\" title=\"" + post.title + "\">" + post.title + "</a></h2>\n" +
-                            "  <p>" + stripped_excerpt + "</p>\n" +
-                            "</article>");
-          }
-
-          enumeratePosts(order, printer);
-      });
+              // Print table itself
+              firsts.map(function(first) {
+                  output.append("<br><h1>" + first + "</h1><a name=first_" + first + "/><hr>");
+                  posts.map(function(post) {
+                      if (first == firstToUpperCase(post.title)) {
+                          print_post(post);
+                      }
+                  });
+              });
+          }); // enumerate posts
+      }); // document load
     </script>
 
   </div><!-- /#index -->

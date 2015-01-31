@@ -3,7 +3,7 @@ layout: post
 title: "Conspiracy Fallacy"
 excerpt: ""
 author: madphilosopher
-tags: [fallacies statism]
+tags: [fallacies]
 comments: true
 image:
   feature: generous-thief.png

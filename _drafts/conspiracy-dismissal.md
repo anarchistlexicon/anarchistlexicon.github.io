@@ -3,7 +3,7 @@ layout: post
 title: "Conspiracy Dismissal"
 excerpt: "\"Only crazy people believe that. You must be wrong.\""
 author: jroelofs
-tags: [fallacies statism]
+tags: [fallacies]
 comments: true
 image:
   feature: generous-thief.png

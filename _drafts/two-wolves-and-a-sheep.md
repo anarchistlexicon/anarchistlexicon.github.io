@@ -2,7 +2,7 @@
 layout: post
 title: "Two Wolves and a Sheep"
 author: jroelofs
-tags: [fallacies statism]
+tags: [parables]
 comments: true
 image:
   feature: generous-thief.png

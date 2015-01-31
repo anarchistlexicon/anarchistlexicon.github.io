@@ -2,7 +2,7 @@
 layout: post
 title: "Anarchy"
 authors: [madphilosopher, jroelofs]
-tags: [fallacies statism]
+tags: [statism]
 comments: true
 image:
   feature: generous-thief.png

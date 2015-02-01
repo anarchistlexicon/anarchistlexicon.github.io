@@ -5,7 +5,7 @@ author: madphilosopher
 tags: [fallacies, statism]
 comments: true
 image:
-  feature: generous-thief.png
+  feature:
   credit: Jon Roelofs
 ---
 

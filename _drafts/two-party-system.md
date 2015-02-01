@@ -6,7 +6,7 @@ author: jroelofs
 tags: [voting]
 comments: true
 image:
-  feature: generous-thief.png
+  feature:
   credit: Jon Roelofs
   creditlink: /authors
 ---

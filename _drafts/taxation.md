@@ -5,7 +5,7 @@ author: jroelofs
 tags: [economics, taxes]
 comments: true
 image:
-  feature: generous-thief.png
+  feature:
   credit: Jon Roelofs
 ---
 

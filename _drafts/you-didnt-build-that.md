@@ -5,7 +5,7 @@ author: madphilosopher
 tags: [economics]
 comments: true
 image:
-  feature: generous-thief.png
+  feature:
   credit: Jon Roelofs
 ---
 

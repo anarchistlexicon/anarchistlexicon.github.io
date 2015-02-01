@@ -5,7 +5,7 @@ author: jroelofs
 tags: [parables]
 comments: true
 image:
-  feature: generous-thief.png
+  feature:
   credit: Jon Roelofs
 ---
 

@@ -6,7 +6,7 @@ author: jroelofs
 tags: [fallacies]
 comments: true
 image:
-  feature: generous-thief.png
+  feature:
   credit: Jon Roelofs
 ---
 

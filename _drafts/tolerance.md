@@ -6,7 +6,7 @@ author: madphilosopher
 tags: [social_contract]
 comments: true
 image:
-  feature: generous-thief.png
+  feature:
   credit: Jon Roelofs
 ---
 

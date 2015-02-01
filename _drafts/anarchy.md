@@ -5,7 +5,7 @@ authors: [madphilosopher, jroelofs]
 tags: [statism]
 comments: true
 image:
-  feature: generous-thief.png
+  feature:
   credit: Jon Roelofs
 ---
 

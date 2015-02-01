@@ -113,7 +113,7 @@
 
               // Print table itself
               firsts.map(function(first) {
-                  output.append("<br><h1>" + first + "</h1><a name=first_" + first + "/><hr>");
+                  output.append("<br><a name=first_" + first + "/><h1>" + first + "</h1><hr>");
                   posts.map(function(post) {
                       if (first == firstToUpperCase(post.title)) {
                           print_post(post);

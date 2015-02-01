@@ -115,7 +115,7 @@
 
               // Print table itself
               tags.map(function(tag) {
-                  output.append("<br><h1>" + tag_name[tag] + "</h1><a name=tag_" + tag + "/><hr>");
+                  output.append("<br><a name=tag_" + tag + "/><h1>" + tag_name[tag] + "</h1><hr>");
                   posts.map(function(post) {
                       if ($.inArray(tag, post.tags) > -1) {
                           print_post(post);

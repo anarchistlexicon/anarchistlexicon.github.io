@@ -86,12 +86,9 @@
               });
 
               // Print links
-              //output.append("<ul>");
               firsts.map(function(first) {
-                  //output.append("<li><a href=\"#first_" + first + "\">" + first + "</a></li>");
-                  output.append("<a href=\"#first_" + first + "\">" + first + "</a>&nbsp;");
+                  output.append("<a href=\"#first_" + first + "\" class=\"btn\"\">" + first + "</a>&nbsp;");
               });
-              //output.append("</ul>");
               output.append("<br/>");
 
               var print_post = function(post) {

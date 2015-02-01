@@ -3,7 +3,7 @@ layout: post
 title: "Individual"
 excerpt: ""
 author: jroelofs
-tags: [police]
+tags: []
 comments: true
 image:
   feature: generous-thief.png

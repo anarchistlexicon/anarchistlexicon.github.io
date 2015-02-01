@@ -3,7 +3,7 @@ layout: post
 title: "Ayn Rand"
 excerpt: ""
 author: jroelofs
-tags: [police]
+tags: []
 comments: true
 image:
   feature: generous-thief.png

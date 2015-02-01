@@ -20,3 +20,15 @@
 
 - slug: police
   name: Police
+
+- slug: parables
+  name: Parables
+
+- slug: voting
+  name: Voting
+
+- slug: social_contract
+  name: Social Contract
+
+- slug: roads
+  name: Roads

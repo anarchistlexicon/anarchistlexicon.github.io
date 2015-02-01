@@ -75,16 +75,22 @@
                   return a;
               };
 
-              // Collect tags
+              // Collect tags used
               var tags = [];
               posts.map(function(post) {
                   tags = unique(tags.concat(post.tags));
               });
 
+              var tag_name = {
+                  {% for tag in site.data.tags %}
+                    "{{ tag.slug }}":"{{ tag.name }}"{{ unless forloop.last }},{{ endunless }}
+                  {% endfor %}
+              };
+
               // Print links
               output.append("<ul>");
               tags.map(function(tag) {
-                  output.append("<li><a href=\"#tag_" + tag + "\">" + tag + "</a></li>");
+                  output.append("<li><a href=\"#tag_" + tag + "\">" + tag_name[tag] + "</a></li>");
               });
               output.append("</ul>");
 
@@ -110,7 +116,7 @@
 
               // Print table itself
               tags.map(function(tag) {
-                  output.append("<br><h1>" + tag + "</h1><a name=tag_" + tag + "/><hr>");
+                  output.append("<br><h1>" + tag_name[tag] + "</h1><a name=tag_" + tag + "/><hr>");
                   posts.map(function(post) {
                       if ($.inArray(tag, post.tags) > -1) {
                           print_post(post);

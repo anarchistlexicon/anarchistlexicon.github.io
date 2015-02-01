@@ -6,7 +6,7 @@ author: madphilosopher
 tags: [statism]
 comments: true
 image:
-  feature: generous-thief.png
+  feature: cage.jpg
   credit: Jon Roelofs
 ---
 

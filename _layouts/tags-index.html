@@ -88,11 +88,10 @@
               };
 
               // Print links
-              output.append("<ul>");
               tags.map(function(tag) {
-                  output.append("<li><a href=\"#tag_" + tag + "\">" + tag_name[tag] + "</a></li>");
+                  output.append("<a href=\"#tag_" + tag + "\" class=\"btn\"\">" + tag_name[tag] + "</a>&nbsp;");
               });
-              output.append("</ul>");
+              output.append("<br/>");
 
               var print_post = function(post) {
                   function stripHtml(str) {

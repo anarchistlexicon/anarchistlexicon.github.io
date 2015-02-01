@@ -3,7 +3,7 @@ layout: page
 title: About the Anarchist Lexicon
 authors: [jroelofs, madphilosopher]
 tags: [about]
-comments: true
+comments: false
 image:
   feature: about.png
   credit: Jon Roelofs

@@ -76,17 +76,17 @@ svg:not(:root) {
   font-family: $heading-font;
   font-weight: 700;
   background-color: $primary;
-  color: $white;
+  color: $primary_fg;
   border-width: 2px !important;
   border-style: solid !important;
   border-color: $primary;
   text-decoration: none !important;
   @include rounded(3px);
   &:visited {
-    color: $white;
+    color: $primary_fg;
   }
   &:hover {
-    background-color: $white;
+    background-color: $primary_fg;
     color: $primary;
   }
 }

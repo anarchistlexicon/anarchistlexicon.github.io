@@ -5,7 +5,7 @@ authors: [jroelofs, madphilosopher]
 tags: [about]
 comments: false
 image:
-  feature: about.png
+  feature: anarchist-lexicon.png
   credit: Jon Roelofs
   creditlink: /authors
 ---

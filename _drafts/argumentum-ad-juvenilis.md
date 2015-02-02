@@ -6,7 +6,7 @@ author: jroelofs
 tags: [argumentum]
 comments: true
 image:
-  feature: about.png
+  feature:
   credit: Jon Roelofs
   creditlink: /authors
 ---

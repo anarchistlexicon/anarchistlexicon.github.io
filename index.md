@@ -1,8 +1,8 @@
 ---
 layout: home
-excerpt: "A minimal Jekyll theme for your blog by designer Michael Rose."
+excerpt: "Your home for anachist memes, jokes, and other debauchery."
 authors: [jroelofs, madphilosopher]
-tags: [Jekyll, theme, responsive, blog, template]
+tags: []
 image:
   feature: anarchist-lexicon.png
   credit: Jon Roelofs

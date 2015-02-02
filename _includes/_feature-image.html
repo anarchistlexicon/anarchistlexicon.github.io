@@ -1,14 +1,22 @@
 {% if page.image.feature %}
-  <div class="image-wrap">
-  <img src=
-    {% if page.image.feature contains 'http' %}
-      "{{ page.image.feature }}"
-    {% else %}
-      "{{ site.url }}/images/{{ page.image.feature }}"
-    {% endif %}
-  alt="{{ page.title }} feature image">
-  {% if page.image.credit %}
-    <span class="image-credit">Photo Credit: {% if page.image.creditlink %}<a href="{{ page.image.creditlink }}">{% endif %}{{ page.image.credit }}{% if page.image.creditlink %}</a>{% endif %}</span>
-  {% endif %}
-  </div><!-- /.image-wrap -->
+  {% assign image = page.image.feature %}
+  {% assign credit = page.image.credit %}
+  {% assign creditlink = page.image.creditlink %}
+{% else %}
+  {% assign image = "anarchist-lexicon.png" %}
+  {% assign credit = site.owner.name %}
+  {% assign creditlink = site.url %}
 {% endif %}
+
+<div class="image-wrap">
+  <img src=
+    {% if image contains 'http' %}
+      "{{ image }}"
+    {% else %}
+      "{{ site.url }}/images/{{ image }}"
+    {% endif %}
+    alt="{{ page.title }} feature image">
+{% if credit %}
+  <span class="image-credit">Photo Credit: {% if creditlink %}<a href="{{ creditlink }}">{% endif %}{{ credit }}{% if creditlink %}</a>{% endif %}</span>
+{% endif %}
+</div><!-- /.image-wrap -->

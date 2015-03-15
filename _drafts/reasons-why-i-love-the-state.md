@@ -2,7 +2,7 @@
 layout: post
 title: "Reasons why I love the state:"
 author: jroelofs
-tags: [economics]
+tags: [statism]
 comments: false
 image:
   feature:

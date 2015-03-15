@@ -3,7 +3,7 @@ layout: post
 title: "Libertarianism"
 author: madphilosopher
 tags: [statism]
-comments: true
+comments: false
 image:
   feature:
   credit: Jon Roelofs

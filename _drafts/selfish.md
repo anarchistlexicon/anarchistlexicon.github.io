@@ -4,7 +4,7 @@ title: "Selfish"
 excerpt: "You're so selfish. You've never done anything for me!"
 author: jroelofs
 tags: [argumentum]
-comments: true
+comments: false
 image:
   feature:
   credit: Jon Roelofs

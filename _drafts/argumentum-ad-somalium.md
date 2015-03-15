@@ -4,7 +4,7 @@ title: "Argumentum ad Somalium"
 excerpt: "If you hate government so much, why don't you move to Somalia?"
 author: jroelofs
 tags: [argumentum]
-comments: true
+comments: false
 image:
   feature: somalia-flag.png
   credit: Jon Roelofs

@@ -4,7 +4,7 @@ title: "The Boogeyman Theory"
 excerpt: "Hitler killed *all* the Jews. We can all agree he was a bad man."
 author: madphilosopher
 tags: [fallacies]
-comments: true
+comments: false
 image:
   feature:
   credit: Jon Roelofs

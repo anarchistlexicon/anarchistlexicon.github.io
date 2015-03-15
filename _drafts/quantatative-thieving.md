@@ -3,7 +3,7 @@ layout: post
 title: "Quantatative Thieving"
 author: jroelofs
 tags: [economics]
-comments: true
+comments: false
 image:
   feature:
   credit: Jon Roelofs

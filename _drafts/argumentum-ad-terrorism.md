@@ -4,7 +4,7 @@ title: "Argumentum ad Terrorism"
 excerpt: "It's only terrorism if government isn't the one doing it."
 author: madphilosopher
 tags: [argumentum]
-comments: true
+comments: false
 image:
   feature:
   credit: Jon Roelofs

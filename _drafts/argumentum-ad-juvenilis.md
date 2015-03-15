@@ -4,7 +4,7 @@ title: "Argumentum ad Juvenilis"
 excerpt: "I was an Anarchist too when I was your age. Then I grew up."
 author: jroelofs
 tags: [argumentum]
-comments: true
+comments: false
 image:
   feature:
   credit: Jon Roelofs

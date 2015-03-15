@@ -4,7 +4,7 @@ title: "Statist Alchemy"
 excerpt: "1) Violence 2) Corecion 3) Theft 4) ??? 5) Profit!"
 author: madphilosopher
 tags: [statism]
-comments: true
+comments: false
 image:
   feature: cage.jpg
   credit: Jon Roelofs

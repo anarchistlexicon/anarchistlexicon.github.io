@@ -4,7 +4,7 @@ title: "Muh Courthouses"
 excerpt: "But without government, who would build the courthouses?!?"
 author: jroelofs
 tags: [muh, statism]
-comments: true
+comments: false
 image:
   feature:
   credit: Jon Roelofs

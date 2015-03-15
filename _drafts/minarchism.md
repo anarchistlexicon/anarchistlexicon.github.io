@@ -4,7 +4,7 @@ title: "Minarchism"
 excerpt: "Government is evil... but we still need a military."
 author: madphilosopher
 tags: [statism, fallacies]
-comments: true
+comments: false
 image:
   feature:
   credit: Jon Roelofs

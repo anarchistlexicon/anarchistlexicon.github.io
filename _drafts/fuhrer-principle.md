@@ -4,7 +4,7 @@ title: "The F&uuml;hrer Principle"
 excerpt: "To question Hitler is to question Germany."
 author: madphilosopher
 tags: [fallacies]
-comments: true
+comments: false
 image:
   feature:
   credit: Jon Roelofs

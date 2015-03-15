@@ -4,7 +4,7 @@ title: "Tolerance"
 excerpt: ""
 author: madphilosopher
 tags: [social_contract]
-comments: true
+comments: false
 image:
   feature:
   credit: Jon Roelofs

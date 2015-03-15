@@ -4,7 +4,7 @@ title: "Two Party System"
 excerpt: "If you vote for a third party, you're throwing away your vote!"
 author: jroelofs
 tags: [voting]
-comments: true
+comments: false
 image:
   feature:
   credit: Jon Roelofs

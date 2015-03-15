@@ -4,7 +4,7 @@ title: "Individual"
 excerpt: ""
 author: jroelofs
 tags: []
-comments: true
+comments: false
 image:
   feature:
   credit: Jon Roelofs

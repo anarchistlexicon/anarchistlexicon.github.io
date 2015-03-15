@@ -3,7 +3,7 @@ layout: post
 title: "Little 'L' libertarianism"
 author: jroelofs
 tags: []
-comments: true
+comments: false
 image:
   feature:
   credit: Jon Roelofs

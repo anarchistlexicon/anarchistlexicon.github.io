@@ -4,7 +4,7 @@ title: "Incrementalism"
 excerpt: "Every penny counts, right?"
 author: madphilosopher
 tags: [fallacies]
-comments: true
+comments: false
 image:
   feature:
   credit: Jon Roelofs

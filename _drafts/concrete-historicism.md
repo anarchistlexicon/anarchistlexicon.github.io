@@ -3,7 +3,7 @@ layout: post
 title: "Concrete Historicism"
 author: madphilosopher
 tags: [fallacies, statism]
-comments: true
+comments: false
 image:
   feature:
   credit: Jon Roelofs

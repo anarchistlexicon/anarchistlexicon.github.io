@@ -3,7 +3,7 @@ layout: post
 title: "You didn't build that"
 author: madphilosopher
 tags: [economics]
-comments: true
+comments: false
 image:
   feature:
   credit: Jon Roelofs

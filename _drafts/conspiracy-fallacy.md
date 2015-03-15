@@ -4,7 +4,7 @@ title: "Conspiracy Fallacy"
 excerpt: ""
 author: madphilosopher
 tags: [fallacies]
-comments: true
+comments: false
 image:
   feature:
   credit: Jon Roelofs

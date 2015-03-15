@@ -3,7 +3,7 @@ layout: post
 title: "You couldn't have built that"
 author: madphilosopher
 tags: [economics]
-comments: true
+comments: false
 image:
   feature:
   credit: Jon Roelofs

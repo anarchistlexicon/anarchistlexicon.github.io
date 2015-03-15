@@ -4,7 +4,7 @@ title: "Ayn Rand"
 excerpt: ""
 author: jroelofs
 tags: []
-comments: true
+comments: false
 image:
   feature:
   credit: Jon Roelofs

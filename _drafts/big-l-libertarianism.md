@@ -3,7 +3,7 @@ layout: post
 title: "Big 'L' Libertarianism"
 author: jroelofs
 tags: [statism]
-comments: true
+comments: false
 image:
   feature:
   credit: Jon Roelofs

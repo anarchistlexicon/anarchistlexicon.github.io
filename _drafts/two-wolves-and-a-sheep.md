@@ -3,7 +3,7 @@ layout: post
 title: "Two Wolves and a Sheep"
 author: jroelofs
 tags: [parables]
-comments: true
+comments: false
 image:
   feature:
   credit: Jon Roelofs

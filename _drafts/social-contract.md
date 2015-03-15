@@ -4,7 +4,7 @@ title: "Social Contract"
 excerpt: "You implicitly signed the social contract when you were born."
 author: madphilosopher
 tags: [statism]
-comments: true
+comments: false
 image:
   feature:
   credit: Jon Roelofs

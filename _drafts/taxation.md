@@ -3,7 +3,7 @@ layout: post
 title: "Taxation"
 author: jroelofs
 tags: [economics, taxes]
-comments: true
+comments: false
 image:
   feature:
   credit: Jon Roelofs

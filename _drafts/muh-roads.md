@@ -4,7 +4,7 @@ title: "Muh Roads"
 excerpt: "But without government, who will build the roads?!?"
 author: jroelofs
 tags: [fallacies, muh]
-comments: true
+comments: false
 image:
   feature: muh-roads.png
   credit: Jon Roelofs

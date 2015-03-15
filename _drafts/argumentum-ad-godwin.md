@@ -4,7 +4,7 @@ title: "Argumentum ad Godwin"
 excerpt: "Your argument is wrong because you mentioned Hitler."
 author: madphilosopher
 tags: [argumentum]
-comments: true
+comments: false
 image:
   feature:
   credit: Jon Roelofs

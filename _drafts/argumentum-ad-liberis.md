@@ -4,7 +4,7 @@ title: "Argumentum ad Liberis"
 excerpt: "But what about the children?!?"
 author: madphilosopher
 tags: [argumentum]
-comments: true
+comments: false
 image:
   feature:
   credit: Jon Roelofs

@@ -4,7 +4,7 @@ title: "Internment Camp"
 excerpt: "Like the Hotel California, you can check out, but you may never leave."
 author: jroelofs
 tags: [police]
-comments: true
+comments: false
 image:
   feature:
   credit: Jon Roelofs

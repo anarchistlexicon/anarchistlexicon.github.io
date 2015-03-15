@@ -4,7 +4,7 @@ title: "Am I being Detained?"
 excerpt: "Am I under arrest? Am I free to go? Am I being detained?"
 author: jroelofs
 tags: [police]
-comments: true
+comments: false
 image:
   feature:
   credit: Jon Roelofs

@@ -5,7 +5,7 @@ excerpt: "I'm a tolerant person, but we still need to go to war with the brown
 heathens."
 author: madphilosopher
 tags: [social_contract]
-comments: true
+comments: false
 image:
   feature:
   credit: Jon Roelofs

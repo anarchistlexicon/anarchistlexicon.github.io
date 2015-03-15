@@ -4,7 +4,7 @@ title: "Sauce Fallacy"
 excerpt: "\"The sky is blue\" <sup>[Citation Needed]</sup>"
 author: madphilosopher
 tags: [fallacies]
-comments: true
+comments: false
 image:
   feature:
   credit: Jon Roelofs

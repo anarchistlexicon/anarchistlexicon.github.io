@@ -4,7 +4,7 @@ title: "Just Doing My Job"
 excerpt: "You can't blame the Nazis, they were just doing their jobs!"
 author: jroelofs
 tags: [police]
-comments: true
+comments: false
 image:
   feature:
   credit: Jon Roelofs

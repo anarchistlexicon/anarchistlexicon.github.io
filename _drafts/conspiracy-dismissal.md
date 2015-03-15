@@ -4,7 +4,7 @@ title: "Conspiracy Dismissal"
 excerpt: "\"Only crazy people believe that. You must be wrong.\""
 author: jroelofs
 tags: [fallacies]
-comments: true
+comments: false
 image:
   feature:
   credit: Jon Roelofs

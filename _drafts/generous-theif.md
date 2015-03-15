@@ -4,7 +4,7 @@ title: "The Generous Thief"
 excerpt: "Taxation is Theft"
 author: jroelofs
 tags: [taxes, economics]
-comments: true
+comments: false
 image:
   feature: generous-thief.png
   credit: Jon Roelofs

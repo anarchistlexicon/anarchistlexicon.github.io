@@ -4,7 +4,7 @@ title: "The Great Man Theory"
 excerpt: "Al Gore invented the internets."
 author: madphilosopher
 tags: [fallacies]
-comments: true
+comments: false
 image:
   feature:
   credit: Jon Roelofs

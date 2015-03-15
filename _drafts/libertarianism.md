@@ -2,7 +2,7 @@
 layout: post
 title: "Libertarianism"
 author: madphilosopher
-tags: [statism]
+tags: [political_spectrum]
 comments: false
 image:
   feature:

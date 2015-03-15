@@ -3,7 +3,7 @@ layout: post
 title: "Minarchism"
 excerpt: "Government is evil... but we still need a military."
 author: madphilosopher
-tags: [statism, fallacies]
+tags: [political_spectrum, statism]
 comments: false
 image:
   feature:

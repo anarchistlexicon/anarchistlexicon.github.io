@@ -3,7 +3,7 @@ layout: post
 title: "Muh Courthouses"
 excerpt: "But without government, who would build the courthouses?!?"
 author: jroelofs
-tags: [muh, statism]
+tags: [muh, political_spectrum]
 comments: false
 image:
   feature:

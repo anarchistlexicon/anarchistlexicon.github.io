@@ -2,7 +2,7 @@
 layout: post
 title: "Anarchy"
 authors: [madphilosopher, jroelofs]
-tags: [statism]
+tags: [political_spectrum]
 comments: false
 image:
   feature:

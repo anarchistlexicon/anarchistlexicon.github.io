@@ -2,7 +2,7 @@
 layout: post
 title: "Big 'L' Libertarianism"
 author: jroelofs
-tags: [statism]
+tags: [political_spectrum, statism]
 comments: false
 image:
   feature:

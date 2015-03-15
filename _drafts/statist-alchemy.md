@@ -3,7 +3,7 @@ layout: post
 title: "Statist Alchemy"
 excerpt: "1) Violence 2) Corecion 3) Theft 4) ??? 5) Profit!"
 author: madphilosopher
-tags: [statism]
+tags: [political_spectrum, statism]
 comments: false
 image:
   feature: cage.jpg

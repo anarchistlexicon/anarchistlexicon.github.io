@@ -12,8 +12,7 @@ image:
 ---
 
 There is no right or wrong, if it's outside the norm, we need to give it tax
-money and violent protection provided by the state.
-
-This is in contrast to the normal definition of [Tolerance](/tolerance).
+money and violent protection provided by the state. This is in contrast to the
+normal definition of [Tolerance](/tolerance).
 
 > {{ page.excerpt }}

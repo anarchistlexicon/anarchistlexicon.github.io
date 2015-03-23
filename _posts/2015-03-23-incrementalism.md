@@ -12,4 +12,5 @@ image:
 
 Playing a game of inches against a force which operates in magnitudes of miles.
 
-> "If we keep voting for the marginally better candidate, we may eventually improve our general state of affairs."
+> If we keep voting for the marginally better candidate, we may eventually
+> improve our general state of affairs.

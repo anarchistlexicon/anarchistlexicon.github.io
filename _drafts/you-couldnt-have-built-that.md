@@ -9,4 +9,5 @@ image:
   credit: Jon Roelofs
 ---
 
-A variation on ["You didn't build that"](/you-didnt-build-that). See [Concrete Historicism](/concrete-historicism).
+A variation on ["You didn't build that"](/you-didnt-build-that). See
+[Concrete Historicism](/concrete-historicism).

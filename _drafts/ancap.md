@@ -1,0 +1,20 @@
+---
+layout: post
+title: "AnCap"
+excerpt: "These greedy Anarcho-Capitalists just want to replace governments
+with markets!"
+author: madphilosopher
+tags: [anarchy]
+comments: false
+image:
+  feature:
+  credit: Jon Roelofs
+  creditlink: /authors
+---
+
+An Anarcho-Capitalist (AnCap) is one who believes that capitalism is a
+necessary result or prerequisite for a free society, based on capitalism's sole
+tenet of voluntary excahge of goods for mutual benefit.
+
+> {{ page.excerpt }}
+

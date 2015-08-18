@@ -11,7 +11,7 @@ image:
   creditlink: /authors
 ---
 
-A variation of the flase dichotomy fallacy by which one assumes that the only intellectual alternative to one's local government is Somalia.
+A variation of the false dichotomy fallacy by which one assumes that the only
+intellectual alternative to one's local government is Somalia.
 
 > {{ page.excerpt }}
-

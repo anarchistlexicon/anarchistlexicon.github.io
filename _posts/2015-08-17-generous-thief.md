@@ -11,7 +11,7 @@ image:
   creditlink: /authors
 ---
 
-The mistaken belief that resources taken on belahf of a victim are not actually
+The mistaken belief that resources taken on behalf of a victim are not actually
 stolen.
 
 > You should pay your fair share of taxes... They go to fund good public

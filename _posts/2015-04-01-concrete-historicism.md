@@ -2,7 +2,7 @@
 layout: post
 title: "Concrete Historicism"
 author: madphilosopher
-tags: [fallacies, political_spectrum]
+tags: [fallacies]
 comments: false
 image:
   feature:

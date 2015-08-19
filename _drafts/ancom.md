@@ -1,0 +1,21 @@
+---
+layout: post
+title: "AnCom"
+excerpt: "So, let me get this straight... you want to eliminate governments
+*and* voluntary exchanges of goods?"
+author: madphilosopher
+tags: []
+comments: false
+image:
+  feature:
+  credit: Jon Roelofs
+  creditlink: /authors
+---
+
+An Anarcho-Communist (AnCom) is one who believes that capitalism is a form of
+government, by which one individual can hold power over another with the
+magical powers of money.  In all reality, it's an overzealous form of anarchism
+that ends up eliminating everything until all that's left is a mob of angry
+communists... Kinda' like what the Bolsheviks achieved.
+
+> {{ page.excerpt }}

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Quantatative Thieving"
+title: "Quantitative Thieving"
 author: jroelofs
 tags: [economics]
 comments: false
